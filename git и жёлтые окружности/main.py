@@ -12,10 +12,10 @@ class CircleApp(QtWidgets.QMainWindow):
 
         # Создаем область для рисования
         self.canvas = QtWidgets.QLabel(self)
-        self.canvas.setGeometry(10, 50, 480, 320)  # Устанавливаем размер области
+        self.canvas.setGeometry(5, 5, 550, 700)  # Устанавливаем размер области
         self.canvas.setStyleSheet("background-color: white;")
         self.canvas.setPixmap(QtGui.QPixmap(self.canvas.size()))
-        self.canvas.pixmap().fill(QtGui.QColor("white"))
+        self.canvas.pixmap().fill(QtGui.QColor("orange"))
 
     def add_circle(self):
         # Получаем размеры области рисования
