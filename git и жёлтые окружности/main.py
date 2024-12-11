@@ -32,10 +32,10 @@ class MainWindow(QMainWindow):
         self.circle_drawer = CircleDrawer()
         self.setCentralWidget(self.circle_drawer)
 
-        button = QPushButton("Add Circle", self)
+        button = QPushButton("Добавить круг", self) # Добавление кнопки и её изменения
         button.clicked.connect(self.circle_drawer.add_circle)
-        button.resize(100, 30)
-        button.move(10, 10)
+        button.resize(200, 100)
+        button.move(270, 10)
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
